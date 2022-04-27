@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Influencers from '../img/Influencers.jpeg'
 
 const Container = styled.div `
 height: calc(100vh - 50px);
@@ -38,6 +39,14 @@ margin-top: 50px;
 `
 const Button = styled.button `
 padding: 15px;
+background-color: darkred;
+color: wheat;
+cursor: pointer;
+border-radius: 10px;
+font-weight: bold;
+border: none;
+letter-spacing: 2px;
+
 
 `
 
@@ -47,21 +56,37 @@ flex-direction: column;
 
 
 `
-const Phone = styled.span `
-color: black;
+const Email = styled.span `
+color: darkred;
+font-weight: bold;
 
 `
 
 const ContactText = styled.span `
 color: black;
+margin-top: 5px;
 
 `
 
 
 const Right = styled.div `
 width: 40%;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
 `
+
+const Image = styled.img `
+width: 100%;
+height: 60%;
+
+
+
+`
+
 
 
 
@@ -82,7 +107,7 @@ const Home = () => {
           <Button> CHECK OUR SERVICES </Button>
 
           <Contact>
-            <Phone> Call Us on +447123123456</Phone>
+            <Email> Contact us on PromoteMe@hotmail.com </Email>
             <ContactText> For any concerns or extra information</ContactText>
 
 
@@ -92,7 +117,7 @@ const Home = () => {
         
         
         </Left>
-        <Right> r </Right>
+        <Right> <Image src={Influencers}></Image> </Right>
     </Container>
   )
 }

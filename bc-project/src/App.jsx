@@ -6,6 +6,7 @@ import Home from './components/home/Home';
 
 const Container = styled.div`
   height: 100vh;
+  overflow: hidden;
 `
 
 const App =() => {
@@ -18,7 +19,7 @@ const App =() => {
       <Navbar/>
       <Home/>
 
-      
+
       </Container>
 
 
