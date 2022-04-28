@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import AnimatedShapes from '../home/AnimatedShapes'
 import Influencers from '../img/Influencers.jpeg'
 
 const Container = styled.div `
@@ -104,7 +105,7 @@ const Home = () => {
         </Desc>
 
         <Info>
-          <Button> CHECK OUR SERVICES </Button>
+          <Button> CHECK OUT OUR SERVICES </Button>
 
           <Contact>
             <Email> Contact us on PromoteMe@hotmail.com </Email>
@@ -118,6 +119,7 @@ const Home = () => {
         
         </Left>
         <Right> <Image src={Influencers}></Image> </Right>
+        <AnimatedShapes/>
     </Container>
   )
 }

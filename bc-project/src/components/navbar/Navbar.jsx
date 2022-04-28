@@ -43,13 +43,14 @@ font-weight: bold;
 `
 
 const Button = styled.button `
-border: 2px solid black;
-padding: 10px 15px;
-background-color: darkgray;
+border: 2px solid white;
+padding: 15px 25px;
+background-color: darkred;
 font-weight: bold;
 color: white;
 border-radius: 10px;      /* makes it curvy */
 cursor: pointer;
+
 `
 
 const Navbar = () => {
@@ -69,12 +70,12 @@ const Navbar = () => {
 
         </Left>
 
-
            <Button> SIGN IN </Button>
            <Button> SIGN UP </Button>
+           
         </Wrapper>
 
-
+           
 
     </Container>
 
