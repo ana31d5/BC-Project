@@ -45,7 +45,7 @@ const Circle = styled.div `
 const Square = styled.div `
     width: 60px;
     height: 60px;
-    background-color: darkgrey;
+    background-color: grey;
     opacity: 0.7;
     position: absolute;
     top: 0px;

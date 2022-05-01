@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import AnimatedShapes from '../home/AnimatedShapes'
 import Insta from '../img/Insta.jpeg'
 
 const Container = styled.div `
@@ -34,8 +35,8 @@ font-size: 70px;
 `
 const SubTitle = styled.span `
 font-size: 24px;
-font-style: italic;
-color: #333;
+font-weight: 550;
+color: black;
 margin-top: 30px;
 
 `
@@ -43,20 +44,21 @@ const Desc = styled.p `
 font-size: 20px;
 color: black;
 margin-top: 30px;
-
+font-weight: 400;
 
 `
 
 const Button = styled.button `
 margin-top: 20px;
 width: 150px;
-border: none;
+border-color: wheat;
 padding: 15px 20px;
 background-color: darkred;
 color: wheat;
 font-size: 20px;
 border-radius: 20px;
 cursor: pointer;
+
 `
 
 const About = () => {
@@ -96,6 +98,8 @@ const About = () => {
 
 
          </Right>
+
+         <AnimatedShapes/>
 
 
     </Container>
