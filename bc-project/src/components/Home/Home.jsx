@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import AnimatedShapes from '../home/AnimatedShapes'
+import AnimatedShapes from '../Home/AnimatedShapes'
 import Influencers from '../img/Influencers.jpeg'
 
 const Container = styled.div `

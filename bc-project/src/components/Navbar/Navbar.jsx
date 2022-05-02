@@ -51,6 +51,13 @@ color: white;
 border-radius: 10px;      /* makes it curvy */
 cursor: pointer;
 
+
+`
+const Right = styled.div `
+margin-left: 10%;
+padding: 20px;
+justify-content: space-around;
+
 `
 
 const Navbar = () => {
@@ -70,9 +77,11 @@ const Navbar = () => {
 
         </Left>
 
+        <Right>
            <Button> SIGN IN </Button>
            <Button> SIGN UP </Button>
-           
+        </Right>
+   
         </Wrapper>
 
            
