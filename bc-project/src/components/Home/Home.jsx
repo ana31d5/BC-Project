@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import AnimatedShapes from '../Home/AnimatedShapes'
+import AnimatedShapes from './AnimatedShapes'
 import Influencers from '../img/Influencers.jpeg'
 
 const Container = styled.div `
 height: calc(100vh - 50px);
 display: flex;
 padding: 20px;
-
+@media only screen and (max-width:480px){
+  flex-direction:column;
+  
+}
 `
 
 const Left = styled.div `
@@ -16,6 +19,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+@media only screen and (max-width:480px){
+  width:100%;
+  height: 100%;
+  
+}
 `
 
 const Title = styled.h1 `
@@ -77,8 +85,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
-`
+@media only screen and (max-width:480px){
+  display:none;
+  
+}`
 
 const Image = styled.img `
 width: 100%;

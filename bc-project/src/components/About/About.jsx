@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AnimatedShapes from '../Home/AnimatedShapes'
-import Insta from '../img/Insta.jpeg'
+import Blackimage from '../img/blackimage.jpg'
 
 const Container = styled.div `
 display: flex;
@@ -18,7 +18,7 @@ margin-top: 60px;
 `
 
 const Image = styled.img `
-width: 85%;
+width: 55%;
 padding: 20px;
 
 
@@ -67,7 +67,7 @@ const About = () => {
 
         <Left> 
             
-            <Image src= {Insta} />
+            <Image src= {Blackimage} />
 
          </Left>
 

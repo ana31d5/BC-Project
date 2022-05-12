@@ -1,13 +1,12 @@
-import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import styled, {css} from 'styled-components';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Service from './components/Service/service';
 import Price from './components/Price/Price';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+
 
 const Container = styled.div`
   height: 100vh;
@@ -32,17 +31,11 @@ background-color: darkred;
 
 const AbShape = styled.div`
 ${Shape};
-clip-path: polygon(0% 0%, 55% 0%, 33% 100%,0% 100%);
- background-color: #7b2828; /*#904c4c */
+clip-path: polygon(0% 0%, 45% 0, 45% 54%, 19% 54%, 24% 81%, 6% 60%, 0 53%);
+ background-color: #03030393 ;     /*,#904c4c; */
 
 `
 
-const ServiceShape = styled.div`
-${Shape};
-clip-path: polygon(0% 0%, 33% 0%, 33% 100%,0% 100%);
- background-color: #7b2828; /*#904c4c */
-
-`
 
 const PriceShape = styled.div`
 ${Shape};
@@ -50,7 +43,10 @@ clip-path: polygon(33% 0%, 100% 0%, 100% 100%,67% 100%);
  background-color: darkred; /*#904c4c */
 
 `
+const ContactShape = styled.div`
+${Shape};
 
+`
 
 
 
@@ -61,8 +57,8 @@ const App =() => {
       
 
       <Container>
+          <Navbar/>
 
-      <Navbar/>
 
       <Home/>
 
@@ -81,13 +77,6 @@ const App =() => {
 
         <Container>
 
-          <Service/>
-          <ServiceShape/>
-
-        </Container>
-
-        <Container>
-
            <Price/>
            <PriceShape/>
 
@@ -95,10 +84,11 @@ const App =() => {
 
         <Container>
           <Contact/>
+          <ContactShape/>
           <Footer/>
        </Container>
 
-    </div>
+  </div>
 
   );
 }

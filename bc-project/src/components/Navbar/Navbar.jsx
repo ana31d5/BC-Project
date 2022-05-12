@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {useState} from 'react'
+import {Link} from 'react-router-dom'
+
 
 const Container = styled.div `
 height: 50px;
@@ -28,14 +31,18 @@ text-decoration: underline crimson;
 
 
 `
-const Menu = styled.ul `
+const Menu = styled.nav `
 display: flex;
 list-style: none;
 
+@media only screen and (max-width:480px){
+  display:none;
+  
+}
 
 `
 
-const MenuItems = styled.li `
+const MenuItems = styled.a `
 margin-right: 30px;
 font-style: 20px;
 font-weight: bold;
@@ -56,29 +63,38 @@ cursor: pointer;
 const Right = styled.div `
 margin-left: 10%;
 padding: 20px;
-justify-content: space-around;
+justify-content: space-between;
 
 `
 
 const Navbar = () => {
+
+
+  // const [activeNav, setActiveNav] = useState('#')
+
   return (
     <Container>
         <Wrapper>
            <Left> <Logo> PromoteME </Logo>
 
+           
+        
            <Menu>
-               <MenuItems> Home </MenuItems>
-               <MenuItems> About </MenuItems>
-               <MenuItems> Services </MenuItems>
-               <MenuItems> Pricing </MenuItems>
+               
+              <MenuItems> Home  </MenuItems>
+               <MenuItems> About  </MenuItems> 
+               <MenuItems > Services </MenuItems>
                <MenuItems> Become A Promoter </MenuItems>
                <MenuItems> Contact Us </MenuItems>
+          
            </Menu>
+
+       
 
         </Left>
 
         <Right>
-           <Button> SIGN IN </Button>
+           <Button> SignIn </Button>
            <Button> SIGN UP </Button>
         </Right>
    
@@ -93,3 +109,14 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+{/* <nav>
+
+<a href='#' onClick={() => setActiveNav ('#')} className={activeNav == '#' ? 'active ' : '' }><AiOutlineHome/></a>
+<a href='#about' onClick={() => setActiveNav ('#about')} className={activeNav == '#about' ? 'active ' : '' }><AiOutlineUser/></a>
+<a href='#experience' onClick={() => setActiveNav ('#experience')} className={activeNav == '#experience' ? 'active ' : ''}><BiBook/></a>
+<a href='#services'onClick={() => setActiveNav ('#service')} className={activeNav == '#services' ? 'active ' : '' }><RiServiceLine/></a>
+<a href='#contact'onClick={() => setActiveNav ('#contact')} className={activeNav == '#contact' ? 'active ' : '' }><BiMessageSquareDetail/></a>
+
+</nav> */}

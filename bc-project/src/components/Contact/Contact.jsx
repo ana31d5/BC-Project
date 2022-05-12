@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import {BiMap} from 'react-icons/bi'
+import {BsFillTelephoneFill} from 'react-icons/bs'
+import {AiTwotoneMail} from 'react-icons/ai'
+
 
 const Container = styled.div `
 height: 90%;
-background: url(https://static.vecteezy.com/system/resources/thumbnails/001/968/633/small/abstract-seamless-white-and-grey-square-3d-pattern-background-modern-geometric-texture-design-illustration-vector.jpg);
+
+
 `
 
 const Wrapper = styled.div `
@@ -26,6 +31,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+`
+const Title = styled.h1 `
+margin: 50px;
+margin-top: 0;
 `
 
 const LeftForm = styled.div `
@@ -69,17 +78,35 @@ cursor: pointer;
 
 const AddressContainer = styled.div `
 width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 
 `
+const AddressItem = styled.div `
+display: flex;
+align-items: center;
+margin-bottom: 50px;
 
-
+`
+const Icons = styled.div `
+width: 20px;
+margin-right: 20px;
+`
+const Text = styled.span `
+font-size: 20px;
+margin-right: 15px;
+`
 
 const Contact = () => {
   return (
     <Container>
       <Wrapper>
         <FormContainer>
+        <Title> Questions? <br/> Let's Get In Touch  </Title>
           <Form>
+            
          <LeftForm> 
            
            <Input placeholder='Your Name' /> 
@@ -100,7 +127,27 @@ const Contact = () => {
         </FormContainer>
 
         <AddressContainer>
-         a
+
+         <AddressItem>
+          <Icons><BiMap/> </Icons>
+           <Text> London, England </Text>
+
+         </AddressItem>
+
+         <AddressItem>
+
+           <Icons><BsFillTelephoneFill/> </Icons>
+           <Text> +44712345677 </Text>
+
+           </AddressItem>
+
+           <AddressItem>
+
+           <Icons><AiTwotoneMail/> </Icons>
+           <Text> contactus@promoteme.co.uk </Text>
+
+         </AddressItem>
+
         </AddressContainer>
 
 

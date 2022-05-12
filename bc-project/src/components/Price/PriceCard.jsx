@@ -21,6 +21,8 @@ font-weight: bold;
 font-size: 20px;
 
 `
+
+
 const PriceContainer = styled.div`
 display: flex;
 align-items: center;
@@ -77,6 +79,8 @@ const PriceCard = ({price, type, desc}) => {
   return (
     <Container>
         <PriceContainer>
+
+         
             <Price> {price}</Price>
             
         </PriceContainer>
