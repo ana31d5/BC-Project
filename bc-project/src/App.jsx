@@ -1,17 +1,21 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Navcomp from './components/Navbar/Navcomp';
 import styled, {css} from 'styled-components';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Price from './components/Price/Price';
-import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.css'
+
+
 
 
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
+
 `
 const Shape = css`
 width: 100%;
@@ -54,38 +58,42 @@ ${Shape};
 const App =() => {
   return (
     <div className='app'>
-      
 
-      <Container>
-          <Navbar/>
+      <Navcomp/>
+
+     
+
+          <Container>
+
+              <Home/>
+              <IntoShape/>
+
+         </Container>
 
 
-      <Home/>
-
-      <IntoShape/>
 
 
-      </Container>
-
-        <Container>
+         <Container>
           
-          <About/>
+              <About/>
 
-          <AbShape/>
-             
-        </Container>
+         </Container>
+
+
 
         <Container>
 
            <Price/>
-           <PriceShape/>
 
+
+  
         </Container>
 
         <Container>
+
           <Contact/>
-          <ContactShape/>
-          <Footer/>
+   
+
        </Container>
 
   </div>

@@ -7,7 +7,7 @@ import About from './components/About/About'
 
 
 const Pages = () => {
-  return (
+  return 
     // <div>
     //     <ul>
     //      <li> <Link to= "/"> Home </Link></li> 
@@ -17,7 +17,7 @@ const Pages = () => {
 
 
     // </div>
-  )
+  
 }
 
 export default Pages

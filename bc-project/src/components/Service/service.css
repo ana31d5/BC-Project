@@ -1,0 +1,21 @@
+#img1 {
+    width: 50px;
+    height: 50px;
+}
+
+#img2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 80px;
+}
+
+#img3 {
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 20px;
+    display: grid;
+    position: relative;
+    
+}

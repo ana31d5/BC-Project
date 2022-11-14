@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import './footer.css'
 
 const Container = styled.div `
 height: 10%;
-background-color: darkred;
+background-color: #615140;
 color: lightgrey;
 
 `

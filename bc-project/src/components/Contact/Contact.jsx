@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import {BiMap} from 'react-icons/bi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {AiTwotoneMail} from 'react-icons/ai'
+import './contact.css'
+import Footer from '../Footer/Footer'
 
 
 const Container = styled.div `
@@ -32,6 +34,7 @@ align-items: center;
 justify-content: center;
 
 `
+
 const Title = styled.h1 `
 margin: 50px;
 margin-top: 0;
@@ -101,6 +104,10 @@ margin-right: 15px;
 
 const Contact = () => {
   return (
+
+    <>
+
+
     <Container>
       <Wrapper>
         <FormContainer>
@@ -153,10 +160,23 @@ const Contact = () => {
 
       </Wrapper>
 
+     
+
 
 
     </Container>
+
+    
+
+     <Footer/>
+
+    
+
+   </>
+
   )
 }
 
 export default Contact;
+
+
